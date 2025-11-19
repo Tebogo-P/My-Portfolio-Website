@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Tebogo Pii - Software Developer</title>
+    <meta name="description" content="Junior Software Developer specializing in Java and full-stack development. Based in Cape Town, South Africa.">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -13,13 +14,15 @@
       <div class="logo">Tebogo Pii</div>
       <div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Tebogo Pii</div>
       <div class="hamburger-menu">
@@ -29,227 +32,349 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
-          <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
-          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="profile.png" alt="Tebogo profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Tebogo Pii</h1>
-        <p class="section__text__p2">Application Development Student</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./tebogo pii.pdf')"
-            target="_blank"
-          >
-            Download CV
-          </button>
-          <button 
-          class="btn btn-color-1" 
-          onclick="window.open('./230226442 Web Design Strategy Plan.pdf')"
-          target="_blank">
-            Strategy Plan
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/tebogo-pii-41161726b'"
-            target="_blank"
-          />
-          <img
-            src="github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-            target="_blank"
-          />
 
+    <section id="home">
+      <div class="hero-container">
+        <div class="hero-content fade-in">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Tebogo Pii</h1>
+          <p class="hero-title">Software Developer</p>
+          <p class="hero-subtitle">Building digital solutions that make a difference</p>
+          <div class="btn-container">
+            <button class="btn btn-primary" onclick="location.href='#projects'">
+              View My Work
+            </button>
+            <button class="btn btn-secondary" onclick="location.href='#contact'">
+              Get In Touch
+            </button>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/tebogo-pii-41161726b" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <img src="linkedin.png" alt="LinkedIn" class="social-icon" />
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+              <img src="github.png" alt="GitHub" class="social-icon" />
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator" onclick="location.href='#about'">
+        <img src="arrow.png" alt="Scroll down" class="arrow-down" />
+      </div>
     </section>
+
     <section id="about">
-      <p class="section__text__p1">Why did i choose to</p>
-      <h1 class="title">Code</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="https://th.bing.com/th/id/OIP.iPInJKDIzbUVZCwFreWG3wHaNK?w=184&h=328&c=7&r=0&o=5&pid=1.7"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="html-icon.png"
-                alt="Html icon"
-                class="icon"
-              />
-          <div class="text-container">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Get To Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-container fade-in-up">
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Passionate Developer from Cape Town</h3>
             <p>
-              I became interested in coding as a South African student 
-              after realizing how much technology powers our society. 
-              I desired to be a creator rather than merely a user. I was 
-              inspired to learn when I saw how coding could be used to 
-              address practical issues in fields like healthcare and 
-              education. South Africa has enormous potential for innovation, 
-              but we also face particular challenges. Seeing the impact of 
-              local digital start-ups gave me hope that I could also develop 
-              solutions to help my community. For me, learning to code is a 
-              means of empowering both myself and others to create a better 
-              future, not just a skill.
+              I'm a software developer based in Cape Town, South Africa, driven by the belief that technology can transform lives and communities. My journey into development began with a simple question: What if I could create solutions that matter?
+            </p>
+            <p>
+              Specializing in Java and full-stack development, I focus on building applications that solve real problems. From designing intuitive user interfaces to architecting backend systems, I enjoy every aspect of bringing ideas to life through code.
+            </p>
+            <p>
+              South Africa's unique tech landscape inspires me daily. I'm particularly interested in projects that address local challenges while leveraging global technologies. Whether it's improving access to services, streamlining processes, or creating tools that empower others, I'm committed to making an impact.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new frameworks, contributing to open-source projects, or sharing knowledge with fellow developers in the community.
             </p>
           </div>
-        </div>
-      </div>
-       <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./about.html'"
-      />
-    </section>
-    <section>
-      <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Farmilar Software</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>VS Code</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>IntelliJ</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Apache Netbeans</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Bootstrap Studio</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>MySQL Workbench</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Figma</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Canva</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Eclipse</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Github</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Microsoft 365 Apps</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-icon">💼</div>
+              <h4>2+ Years</h4>
+              <p>Development Experience</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🎓</div>
+              <h4>Diploma</h4>
+              <p>ICT Application Development</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🚀</div>
+              <h4>6+ Projects</h4>
+              <p>Completed & Deployed</p>
+            </div>
           </div>
         </div>
+      </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="https://sites.google.com/view/pii-tebogo-chimane-2023/home" 
-              target="_blank">My Google Sites Portfolio Website Link</a></li>
-          </ul>
+
+    <section id="skills">
+      <div class="section-header fade-in-up">
+        <span class="section-label">My Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-container fade-in-up">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-grid">
+            <div class="skill-item">
+              <div class="skill-icon">☕</div>
+              <span class="skill-name">Java</span>
+              <span class="skill-level advanced">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🌐</div>
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🐍</div>
+              <span class="skill-name">Python</span>
+              <span class="skill-level beginner">Beginner</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">📊</div>
+              <span class="skill-name">SQL</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+          </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Tebogo Pii. All Rights Reserved.</p>
+
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skill-grid">
+            <div class="skill-item">
+              <div class="skill-icon">📝</div>
+              <span class="skill-name">HTML5</span>
+              <span class="skill-level advanced">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🎨</div>
+              <span class="skill-name">CSS3</span>
+              <span class="skill-level advanced">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">⚛️</div>
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-level advanced">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🖼️</div>
+              <span class="skill-name">JavaFX</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <div class="skill-grid">
+            <div class="skill-item">
+              <div class="skill-icon">🔧</div>
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🗄️</div>
+              <span class="skill-name">MySQL</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">💻</div>
+              <span class="skill-name">VS Code</span>
+              <span class="skill-level advanced">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🎯</div>
+              <span class="skill-name">Figma</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">📦</div>
+              <span class="skill-name">Maven</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🔍</div>
+              <span class="skill-name">OpenCV</span>
+              <span class="skill-level intermediate">Intermediate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header fade-in-up">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-container fade-in-up">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="project-1.png" alt="Student Residence Finder" />
+            <div class="project-overlay">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Swing</span>
+              <span class="project-tag">Derby DB</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Student Residence Finder</h3>
+            <p>A comprehensive desktop application for student accommodation management featuring user authentication, profile management, and residence search functionality. Built with Java Swing and Apache Derby database with secure CRUD operations and input validation.</p>
+            <div class="project-links">
+              <button class="btn btn-small" onclick="window.open('https://github.com/', '_blank')">View Code</button>
+              <button class="btn btn-small btn-outline" onclick="alert('Desktop application - download required')">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="project-2.png" alt="Student Enrollment System" />
+            <div class="project-overlay">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Sockets</span>
+              <span class="project-tag">Client-Server</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Student Enrollment System</h3>
+            <p>A distributed client-server application for managing student course enrollments using Java socket programming. Features include real-time data synchronization, multi-threaded server architecture, and database integration with DAO pattern implementation.</p>
+            <div class="project-links">
+              <button class="btn btn-small" onclick="window.open('https://github.com/', '_blank')">View Code</button>
+              <button class="btn btn-small btn-outline" onclick="alert('Client-server architecture project')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="project-3.png" alt="Save Lives NGO Website" />
+            <div class="project-overlay">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Save Lives NGO Website</h3>
+            <p>A modern, responsive website for a non-profit organization focused on helping underprivileged children. Features multiple pages including home, projects, about, contact, and volunteer sign-up with custom styling and interactive navigation.</p>
+            <div class="project-links">
+              <button class="btn btn-small" onclick="window.open('https://github.com/', '_blank')">View Code</button>
+              <button class="btn btn-small btn-outline" onclick="alert('Multi-page web application')">Preview</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="project-3.png" alt="Hand Gesture Recognition" />
+            <div class="project-overlay">
+              <span class="project-tag">JavaFX</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">Computer Vision</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Hand Gesture Recognition System</h3>
+            <p>Real-time computer vision application using JavaFX and OpenCV for hand gesture detection. Recognizes open hand vs. closed fist gestures through skin-color thresholding, contour detection, and convexity defect analysis with live webcam feed processing.</p>
+            <div class="project-links">
+              <button class="btn btn-small" onclick="window.open('https://github.com/', '_blank')">View Code</button>
+              <button class="btn btn-small btn-outline" onclick="alert('JavaFX desktop application with OpenCV')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="project-1.png" alt="Portfolio Website" />
+            <div class="project-overlay">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Professional Portfolio</h3>
+            <p>A modern, single-page portfolio website showcasing skills, projects, and professional experience. Features smooth scrolling, responsive design, scroll-reveal animations, and optimized performance across all devices.</p>
+            <div class="project-links">
+              <button class="btn btn-small" onclick="location.href='#home'">View Live</button>
+              <button class="btn btn-small btn-outline" onclick="window.open('https://github.com/', '_blank')">Source Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="project-2.png" alt="Google Sites Portfolio" />
+            <div class="project-overlay">
+              <span class="project-tag">Google Sites</span>
+              <span class="project-tag">Web Design</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Academic Portfolio (2023)</h3>
+            <p>My first portfolio website built with Google Sites showcasing academic projects, coursework, and early development work. Documents my learning journey and progression as a developer during my studies at CPUT.</p>
+            <div class="project-links">
+              <button class="btn btn-small" onclick="window.open('https://sites.google.com/view/pii-tebogo-chimane-2023/home', '_blank')">View Site</button>
+              <button class="btn btn-small btn-outline" onclick="alert('Built with Google Sites platform')">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-header fade-in-up">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-container fade-in-up">
+        <div class="contact-content">
+          <p class="contact-intro">
+            I'm always interested in hearing about new opportunities, collaborations, or just having a chat about technology. Feel free to reach out!
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:230226442@mycput.ac.za" class="contact-card">
+              <img src="email.png" alt="Email" class="contact-icon" />
+              <div class="contact-info">
+                <h4>Email</h4>
+                <p>230226442@mycput.ac.za</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/tebogo-pii-41161726b" target="_blank" rel="noopener" class="contact-card">
+              <img src="linkedin.png" alt="LinkedIn" class="contact-icon" />
+              <div class="contact-info">
+                <h4>LinkedIn</h4>
+                <p>Connect with me</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p class="footer-name">Tebogo Pii</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="footer-copyright">© 2024 Tebogo Pii. All rights reserved.</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
